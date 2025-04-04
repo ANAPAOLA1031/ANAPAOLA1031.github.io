@@ -15,15 +15,76 @@
         .container {
             width: 60%;
             margin: 50px auto;
-            background-color: #f8d7e3;
+            background-color: #f8d7e3; /* Color suave para armonizar */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #ff4081;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ff4081;
+            margin-bottom: 10px;
+        }
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+        .title {
+            font-size: 18px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        .info {
+            text-align: left;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff4081;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #e91e63;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ff4081;
+        }
         .section {
             margin-top: 30px;
             padding-bottom: 20px;
-            border-bottom: 3px solid #ff4081;
+            border-bottom: 3px solid #ff4081; /* Línea separadora */
         }
         .section h2 {
             text-align: left;
@@ -31,28 +92,37 @@
             border-left: 4px solid #ff4081;
             padding-left: 10px;
         }
-        .project {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 20px;
+        .section ul {
+            list-style: none;
+            padding: 0;
         }
-        .project img {
-            width: 150px;
-            height: auto;
-            border-radius: 5px;
-            margin-left: 20px;
-        }
-        .project-info {
-            width: 70%;
-        }
-        .project-info p {
-            margin: 5px 0;
+        .section li {
+            padding: 5px 0;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
+        <div class="header">
+            <h1 class="name">Ana Paola Alberto Ramos</h1>
+            <p class="title">Ingeniera en Redes y Telecomunicaciones</p>
+            
+            <div class="info">
+                <p><span class="highlight">Edad:</span> 20 años</p>
+                <p><span class="highlight">Ubicación:</span> Juventino Rosas, México</p>
+                <p><span class="highlight">Correo:</span> 323030172@upjr.edu.mx</p>
+        
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
         <div class="section">
             <h2>Educación</h2>
             <ul>
@@ -105,6 +175,7 @@
                 <li>Partner NDG Linux Unhatched</li>
             </ul>
         </div>
+
 
         <div class="section">
             <h2>Proyecto Final</h2>
