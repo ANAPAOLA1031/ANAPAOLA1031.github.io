@@ -1,1 +1,32 @@
+Ejemplo de Promise, async, await
+---------------Index.html---------------
+import { simulateAsyncOperation } from "./Promesa";
+
+simulateAsyncOperation()
+  .then((mensaje) => {
+    console.log(mensaje); // "Operación completada correctamente."
+  })
+  .catch((error) => {
+    console.error(error); // Error: Error en la operación asincrónica: ...
+  });
+
+--------------Promesa.ts---------------------
+export async function simulateAsyncOperation(): Promise<string> {
+  try {
+    const result = await new Promise<string>((resolve, reject) => {
+      setTimeout(() => {
+        const success = true;
+
+        if (success) {
+          resolve("Operación completada correctamente.");
+        } else {
+          reject("Hubo un error en la operación.");
+        }
+      }, 2000);
+    });
+ return result;
+  } catch (error) {
+    throw new Error(`Error fetching data: ${error}`);  
+  }
+}
 
